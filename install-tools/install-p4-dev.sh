@@ -71,7 +71,7 @@ function do_init_checks {
     source /etc/os-release
 
     supported_distribution=0
-    if [ "${ID}" = "ubuntu" | "${ID}" = "linuxmint" ]
+    if [ "${ID}" = "linuxmint" ]
     then
         case "${VERSION_ID}" in
         20.04)
