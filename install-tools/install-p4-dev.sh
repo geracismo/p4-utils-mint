@@ -3,7 +3,7 @@
 # Author: Edgar Costa Molero
 # Email: cedgar@ethz.ch
 
-/home/ubuntu20/p4-tools/p4-utils# This scripts installs all the required software to learn and prototype P4
+/home/sgeraci/p4-tools/p4-utils# This scripts installs all the required software to learn and prototype P4
 # programs using the p4lang software suite. 
 
 # Furthermore, we install p4-utils and p4-learning and ffr routers.
@@ -71,13 +71,16 @@ function do_init_checks {
     source /etc/os-release
 
     supported_distribution=0
-    if [ "${ID}" = "ubuntu" ]
+    if [ "${ID}" = "ubuntu" | "${ID}" = "linuxmint" ]
     then
         case "${VERSION_ID}" in
         20.04)
             supported_distribution=1
             ;;
         22.04)
+            supported_distribution=1
+            ;;
+	21.03)
             supported_distribution=1
             ;;
         esac
