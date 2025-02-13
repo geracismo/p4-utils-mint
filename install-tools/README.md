@@ -1,7 +1,7 @@
-## MY VERSION
+# My p4-utils version
+This is a direct fork of p4-utils, adapted in order to run also on Mint 21.3,
 
-
-# Installation tools
+## Installation tools
 
 The manual installation process is quite long and cumbersome because of the
 dependencies that are needed by P4-Utils. For this reason, we provide a
