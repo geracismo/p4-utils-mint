@@ -56,7 +56,7 @@ FRROUTING_COMMIT="frr-8.5" # Mar 25 2021
 function do_os_message() {
     1>&2 echo "Found ID ${ID} and VERSION_ID ${VERSION_ID} in /etc/os-release"
     1>&2 echo "This script only supports these:"
-    1>&2 echo "    ID ubuntu, VERSION_ID in 20.04 22.04"
+    1>&2 echo "    ID linuxmint, VERSION_ID in 20.04 22.04"
     1>&2 echo ""
     1>&2 echo "Proceed installing at your own risk."
 }
