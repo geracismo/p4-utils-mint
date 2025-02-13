@@ -74,13 +74,10 @@ function do_init_checks {
     if [ "${ID}" = "linuxmint" ]
     then
         case "${VERSION_ID}" in
-        20.04)
+        21.3)
             supported_distribution=1
             ;;
         22.04)
-            supported_distribution=1
-            ;;
-	21.3)
             supported_distribution=1
             ;;
         esac
