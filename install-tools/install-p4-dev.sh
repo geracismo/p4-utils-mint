@@ -741,8 +741,8 @@ do_mininet_no_python2
 #
 ## Mininet installs Python2 which becomes the system default binary.
 ## This sets again Python3 as the system default binary.
-#sudo ln -sf $(which python3) /usr/bin/python
-#sudo ln -sf $(which pip3) /usr/bin/pip
+sudo ln -sf $(which python3) /usr/bin/python
+sudo ln -sf $(which pip3) /usr/bin/pip
 
 #
 if [ "$FRROUTING" = true ]; then
