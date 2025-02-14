@@ -566,8 +566,8 @@ function do_mininet_no_python2 {
     git checkout ${MININET_COMMIT}
 
     # patching mininet
-    wget -O mininet.patch https://raw.githubusercontent.com/nsg-ethz/p4-utils/${P4_UTILS_BRANCH}/install-tools/conf_files/mininet.patch
-    patch -p1 < "mininet.patch"
+    # wget -O mininet.patch https://raw.githubusercontent.com/geracismo/p4-utils/${P4_UTILS_BRANCH}/install-tools/conf_files/mininet.patch
+    # patch -p1 < "mininet.patch"
 
     # Build mininet
     sudo PYTHON=python3 ./util/install.sh -nwv
