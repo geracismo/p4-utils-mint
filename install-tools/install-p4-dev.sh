@@ -184,7 +184,7 @@ function do_global_setup {
     #rm libiperf0_3.1.3-1_amd64.deb iperf3_3.1.3-1_amd64.deb
 
     # Configure tmux
-    wget -O ~/.tmux.conf https://raw.githubusercontent.com/geracisimo/p4-utils-mint/${P4_UTILS_BRANCH}/install-tools/conf_files/tmux.conf
+    wget -O ~/.tmux.conf https://raw.githubusercontent.com/geracismo/p4-utils-mint/${P4_UTILS_BRANCH}/install-tools/conf_files/tmux.conf
 }
 
 #### PROTOBUF FUNCTIONS
