@@ -14,7 +14,7 @@ init_file = os.path.join(path, '__init__.py')
 # If __init__.py is not present in the google module directory
 if not os.path.isfile(init_file):
     # Create __init__.py file
-    with open(init_file, 'w+') as f:
+    # with open(init_file, 'w+') as f: # commented because already exists
         pass
     print('File {} correctly created.'.format(init_file))
 else:
