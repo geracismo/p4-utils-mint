@@ -12,10 +12,10 @@ path = re.findall(r"\['(.*)'\]", str(google.__path__))[0]
 init_file = os.path.join(path, '__init__.py')
 
 # If __init__.py is not present in the google module directory
-if not os.path.isfile(init_file):
+# if not os.path.isfile(init_file):
     # Create __init__.py file
     # with open(init_file, 'w+') as f: # commented because already exists
-        pass
-    print('File __init__.py correctly created.')
-else:
-    print('File {} already present.'.format(init_file))
+    #    pass
+    #print('File __init__.py correctly created.')
+#else:
+print('File __init__.py already present.')
