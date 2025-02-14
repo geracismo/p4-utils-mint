@@ -16,6 +16,6 @@ if not os.path.isfile(init_file):
     # Create __init__.py file
     # with open(init_file, 'w+') as f: # commented because already exists
         pass
-    print('File {} correctly created.'.format(init_file))
+    print('File __init__.py correctly created.')
 else:
     print('File {} already present.'.format(init_file))
