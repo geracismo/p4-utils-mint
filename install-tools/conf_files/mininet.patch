@@ -26,7 +26,7 @@ index 04f85b0..6cd4221 100755
 +        pylint=pylint
          # Starting around 20.04, installing pyflakes instead of pyflakes3
          # causes Python 2 to be installed, which is exactly NOT what we want.
-         if [ "$DIST" = "Ubuntu" -a `expr $RELEASE '>=' 20.04` = "1" ]; then
+         if [ "$DIST" = "Linuxmint" -a `expr $RELEASE '>=' 20.04` = "1" ]; then
 @@ -187,10 +189,14 @@ function mn_deps {
                  pf=pyflakes3
                  pep8=python3-pep8
