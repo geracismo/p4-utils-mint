@@ -682,7 +682,7 @@ function do_sphinx {
 }
 
 function google_module_fix {
-    curl -sSL https://raw.githubusercontent.com/nsg-ethz/p4-utils/${P4_UTILS_BRANCH}/install-tools/scripts/protoinitfix.py | sudo python3
+    curl -sSL https://raw.githubusercontent.com/geracismo/p4-utils-mint/${P4_UTILS_BRANCH}/install-tools/scripts/protoinitfix.py | sudo python3
 }
 
 ###### MAIN ######
