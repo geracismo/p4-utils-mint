@@ -184,7 +184,7 @@ function do_global_setup {
     #rm libiperf0_3.1.3-1_amd64.deb iperf3_3.1.3-1_amd64.deb
 
     # Configure tmux
-    wget -O ~/.tmux.conf https://raw.githubusercontent.com/nsg-ethz/p4-utils/${P4_UTILS_BRANCH}/install-tools/conf_files/tmux.conf
+    wget -O ~/.tmux.conf https://raw.githubusercontent.com/geracsimo/p4-utils-mint/${P4_UTILS_BRANCH}/install-tools/conf_files/tmux.conf
 }
 
 #### PROTOBUF FUNCTIONS
@@ -248,7 +248,7 @@ function do_grpc {
     echo "grpc installed"
 }
 
-PY3LOCALPATH=`curl -sSL https://raw.githubusercontent.com/nsg-ethz/p4-utils/${P4_UTILS_BRANCH}/install-tools/scripts/py3localpath.py | python3`
+PY3LOCALPATH=`curl -sSL https://raw.githubusercontent.com/geracismo/p4-utils-mint/${P4_UTILS_BRANCH}/install-tools/scripts/py3localpath.py | python3`
 function site_packages_fix {
     local SRC_DIR
     local DST_DIR
@@ -650,7 +650,7 @@ function do_p4-utils {
     # Clone source
     cd ${BUILD_DIR}
     if [ ! -d p4-utils ]; then
-        git clone https://github.com/nsg-ethz/p4-utils.git p4-utils
+        git clone https://github.com/geracismo/p4-utils-mint.git p4-utils
     fi
     cd p4-utils
 
