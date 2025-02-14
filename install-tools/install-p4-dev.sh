@@ -560,10 +560,10 @@ function do_mininet_no_python2 {
     # we want to avoid this in ubuntu 20+
     # This patch helps us doing so
     # from https://github.com/jafingerhut/p4-guide/blob/d36766f2c50a2159e43dd843085fbbe416d23b33/bin/install-p4dev-v6.sh#L868
-    MININET_COMMIT="5b1b376336e1c6330308e64ba41baac6976b6874"  # 2023-May-28
-    git clone https://github.com/mininet/mininet mininet
-    cd mininet
-    git checkout ${MININET_COMMIT}
+    #MININET_COMMIT="5b1b376336e1c6330308e64ba41baac6976b6874"  # 2023-May-28
+    git clone https://github.com/geracismo/mininet-mint.git
+    cd mininet-mint
+    #git checkout ${MININET_COMMIT}
 
     # patching mininet
     # wget -O mininet.patch https://raw.githubusercontent.com/geracismo/p4-utils/${P4_UTILS_BRANCH}/install-tools/conf_files/mininet.patch
@@ -572,7 +572,7 @@ function do_mininet_no_python2 {
     # Build mininet
     sudo PYTHON=python3 ./util/install.sh -nwv
 
-    echo "mininet installed"
+    echo "mininet-mint installed"
 }
 
 # Install libyang necessary for FRRouting
